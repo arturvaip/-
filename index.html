@@ -23,6 +23,7 @@
                 text-align: left;
                 display: inline-block;
                 font-size: 30px;
+                position: relative;
             }
 
             li {
@@ -40,10 +41,10 @@
             li::before {
                 content: "";
                 position: absolute;
-                top: 50px;
-                left: 500%;
-                width: 100px;
-                height: 100px; 
+                top: -50px;
+                left: 150%;
+                width: 500px;
+                height: 800px; 
                 background-size: cover;
                 display: none;
             }
@@ -53,36 +54,41 @@
             }
 
             li:nth-child(1)::before {
-                background-image: url();
-
+                background-image: url(https://static.hdrezka.ac/i/2024/10/9/m45dbbe585c7fpi77j53t.png);
             }
 
             li:nth-child(2)::before {
-
+                background-image: url(https://static.hdrezka.ac/i/2021/7/11/t8d7152ff258dxj62d24h.jpeg);
             }
 
             li:nth-child(3)::before {
-
+                background-image: url(https://static.hdrezka.ac/i/2021/1/24/g47020efc0294og77k72w.png);
             }
 
             li:nth-child(4)::before {
-
+                background-image: url(https://static.hdrezka.ac/i/2020/11/16/cc8fd32c04b3fsx87a91g.jpeg);
             }
 
             li:nth-child(5)::before {
+                background-image: url(https://static.hdrezka.ac/i/2020/3/28/l459cdbaa79b2ej81u34s.png);
+            }
 
+            @media (min-width:769) {
+                img {
+                    display: block;
+                }
             }
 
         </style>
     </head>
     <body>
-        <h1>список годных фильмов</h1>
+        <h1>список годных фильмов на вечер</h1>
          <ol>
             <li>дикий робот</li>
-            <li>одорённая</li>
+            <li>одарённая</li>
             <li>одарённые</li>
             <li>гарри поттер</li>
-            <li>волщебники</li>
+            <li>Волшебники</li>
          </ol>        
     </body>
 </html>
