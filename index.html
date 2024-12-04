@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-
             body {
                 text-align: center;
                 background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20191113/pngtree-blue-film-technology-film-background-image_322042.jpg);
@@ -35,6 +35,42 @@
                 body { 
                     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210916/pngtree-movie-film-simple-blue-background-image_901044.jpg);
                 }
+            }
+
+            li::before {
+                content: "";
+                position: absolute;
+                top: 50px;
+                left: 500%;
+                width: 100px;
+                height: 100px; 
+                background-size: cover;
+                display: none;
+            }
+
+            li:hover::before {
+                display: block;
+            }
+
+            li:nth-child(1)::before {
+                background-image: url();
+
+            }
+
+            li:nth-child(2)::before {
+
+            }
+
+            li:nth-child(3)::before {
+
+            }
+
+            li:nth-child(4)::before {
+
+            }
+
+            li:nth-child(5)::before {
+
             }
 
         </style>
